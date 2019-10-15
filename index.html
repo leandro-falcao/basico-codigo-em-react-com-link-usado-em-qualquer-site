@@ -13,20 +13,45 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
    <!-- babel 6 do react 16 -->
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <style>
+    .conteudo{
+    }  
+  </style>
 
 </head>
 
 <body>  
   <div id="root"></div> 
   
-  <script type="text/babel">
+  <section class="conteudoPrincipal">
+    <asside class="barraLateral"></asside>
+  </section>
+  <footer class="rodapePrincipal"></footer>
+ 
+ <script type="text/babel">
+    
   
-      ReactDOM.render(
-          <h1 className="teste1"> ola MUNDO .. hello world </h1>,
-        document.getElementById("root")
-      );
+    ReactDOM.render(
+      <div className="conteudo">
+        <header className="cabecalho"> CABECALHO </header>
+        <section class="conteudoPrincipal">
+          CONTEUDO 
+        </section>
+        
+        <asside class="barraLateral">
+            BARRA LATERAL
+        </asside>
+
+        <footer class="rodapePrincipal">
+          RODAPE SITE  
+        </footer>
+      </div>,
+      document.getElementById("root")
+    );
     
     </script>
+  
 </body>
 
 </html> 
